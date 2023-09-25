@@ -8,7 +8,7 @@
 -- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
+START TRANSACTION;                   
 SET time_zone = "+00:00";
 
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `Admin` (
   `Id` int(11) NOT NULL,
   `fullname` varchar(50) NOT NULL,
-  `username` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL, 
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -49,7 +49,7 @@ INSERT INTO `Admin` (`Id`, `fullname`, `username`, `password`) VALUES
 
 CREATE TABLE `login` (
   `id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
+  `name` varchar(50) NOT NULL,    
   `username` varchar(25) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(75) NOT NULL
